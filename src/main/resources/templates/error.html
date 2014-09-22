@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+      layout:decorator="layout">
+<head>
+</head>
+<body>
+<span layout:fragment="header">
+    Trouble...
+</span>
+
+<div layout:fragment="content"
+     class="container">
+    <div>
+        <div class="row">
+            <div class="col-md-4">
+               <strong>Exception:</strong> <span th:text="${exception}"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+               <strong>Error:</strong> <span th:text="${error}"></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
